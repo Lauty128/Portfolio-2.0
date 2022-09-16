@@ -20,10 +20,10 @@ const sections = {
     "contactMe":"-300vh"
 }
 
-document.querySelector(".nav").addEventListener("click", e=>{
-    document.querySelector(".main").style.transform = `translateY(${sections[e.target.getAttribute("data-href")]})`
-})
+//document.querySelector(".nav").addEventListener("click", e=>{
+  //  document.querySelector(".main").style.transform = `translateY(${sections[e.target.getAttribute("data-href")]})`
+//})
 
 
 
-responsiveDesign__main()
+//responsiveDesign__main()
