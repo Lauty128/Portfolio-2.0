@@ -6,16 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/934826e832.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/media.css">
     <title>Portfolio</title>
 </head>
 <body>
 
     
     <nav class="nav">
-        <div class="nav__div">
-            <h3>Darkmode</h3>
-            <p>Utilizar data-theme con Javascript. Mientras trabajar colores con variables</p>
-        </div>
         <a class="nav__buttonSection" data-href="home">
             <i class="fa-solid fa-house"></i>
             <span>Home</span>
@@ -35,8 +32,30 @@
     </nav>
     
     <main class="main">
-        <section class="main__section main__section--home" id="home--section">
-            <h2 class="main__section__h2">HOME</h2>
+        <section class="main__section sectionHome" id="home--section">
+
+                <div class="background-home">
+                    <img src="public/img/office-g57d11e9a5_1920.jpg" alt="Background" class="background-home__img">
+                    <div class="background-home__button" id="changeBackground">
+                        <i class="background-home__i fa-solid fa-image"></i>
+                        <span class="background-home__span">Cambiar Imagen</span>
+                    </div>
+                </div>
+                <div class="mainData-home">
+                    <div class="mainData-home__perfilImage">
+                        <img  class="mainData-home__img" src="public/img/IMG_20220915_095614_681 (2).jpg" alt="Imagen de perfil">
+                    </div>
+                    <div class="mainData-home__div">
+                        <h2 class="mainData-home__h2">LAUTARO SILVERII</h2>
+                        <h3 class="mainData-home__h3">DESARROLLADOR WEB FRONT-END</h3>
+                    </div>
+                </div>
+                
+                <div class="cv-home">
+                    <i class="cv-home__i fa-solid fa-cloud-arrow-down"></i>
+                    <span class="cv-home__span">DESCARGAR CV</span>
+                </div>
+
         </section>
 
         <section class="main__section main__section--aboutMe" id="aboutMe--section">
