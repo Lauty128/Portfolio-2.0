@@ -7,32 +7,34 @@
     <script src="https://kit.fontawesome.com/934826e832.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="public/css/media.css">
+    <link rel="stylesheet" href="public/css/modifier.css">
     <title>Portfolio</title>
 </head>
 <body>
-
     
     <nav class="nav">
-        <a class="nav__buttonSection" data-href="home">
-            <i class="fa-solid fa-house"></i>
-            <span>Home</span>
-        </a>
-        <a class="nav__buttonSection" data-href="aboutMe">
-            <i class="fa-solid fa-user"></i>
-            <span>About Me</span>
-        </a>
-        <a class="nav__buttonSection" data-href="projects">
-            <i class="fa-solid fa-diagram-project"></i>
-            <span>Projects</span>
-        </a>
-        <a class="nav__buttonSection" data-href="contactMe">
-            <i class="fa-solid fa-address-book"></i>
-            <span>Contact</span>
-        </a>
+        <div class="nav__div">
+            <a class="nav__buttonSection nav__buttonSection--active" id="home--button" href="#home">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+            <a class="nav__buttonSection" id="aboutMe--button" href="#aboutMe">
+                <i class="fa-solid fa-user"></i>
+                <span>About Me</span>
+            </a>
+            <a class="nav__buttonSection" id="projects--button" href="#projects">
+                <i class="fa-solid fa-diagram-project"></i>
+                <span>Projects</span>
+            </a>
+            <a class="nav__buttonSection" id="contactMe--button" href="#contactMe">
+                <i class="fa-solid fa-address-book"></i>
+                <span>Contact</span>
+            </a>
+        </div>
     </nav>
     
     <main class="main">
-        <section class="main__section sectionHome" id="home--section">
+        <section class="main__section section-home" id="home">
 
                 <div class="background-home">
                     <img src="public/img/office-g57d11e9a5_1920.jpg" alt="Background" class="background-home__img">
@@ -51,22 +53,32 @@
                     </div>
                 </div>
                 
-                <div class="cv-home">
+                <a download="CV-Lautaro Silverii" href="public/resources/CV.pdf" class="cv-home">
                     <i class="cv-home__i fa-solid fa-cloud-arrow-down"></i>
                     <span class="cv-home__span">DESCARGAR CV</span>
-                </div>
+                </a >
 
         </section>
 
-        <section class="main__section main__section--aboutMe" id="aboutMe--section">
-            <h2 class="main__section__h2">ABOUT ME</h2>
+        <section class="main__section section-aboutMe" id="aboutMe">
+            <h2 class="aboutMe__h2">ACERCA DE MI</h2>
+            <p class="aboutMe__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo vero placeat veritatis animi ad illum saepe consequatur, quaerat inventore sint nam corrupti optio numquam? Obcaecati laborum molestias amet aperiam possimus?</p>
+            <div class="aboutMe__skills">
+                <i class="skills__i fa-brands fa-html5" data-name="HTML5"></i>
+                <i class="skills__i fa-brands fa-css3-alt" data-name="CSS3"></i>
+                <i class="skills__i fa-brands fa-square-js" data-name="JavaScript"></i>
+                <i class="skills__i fa-brands fa-git-alt" data-name="Git"></i>
+                <i class="skills__i fa-brands fa-github" data-name="GitHub"></i>
+                <i class="skills__i fa-brands fa-figma" data-name="Figma"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vitae tenetur a debitis aperiam libero voluptas, cumque quia fugiat at molestiae earum dolorum.</p>
         </section>
 
-        <section class="main__section main__section--projects" id="projects--section">
+        <section class="main__section main__section--projects" id="projects">
             <h2 class="main__section__h2">PROJECTS</h2>
         </section>
 
-        <section class="main__section main__section--contactMe" id="contactMe--section">
+        <section class="main__section main__section--contactMe" id="contactMe">
             <h2 class="main__section__h2">CONTACT ME</h2>
         </section>
     </main>

@@ -5,6 +5,8 @@
     --secundary-color:blue;
 }
 
+html{ scroll-behavior: smooth; }
+
 body{ 
     padding: 0; 
     margin: 0; 
@@ -18,25 +20,33 @@ body{
 
 nav{
     position: relative;
+    height: 100%;
+}
+.nav__div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
-
 .nav__buttonSection{
     display: block;
-    width: fit-content;
     width: 100%;
     text-align: right;
     padding:10px 20px 10px 0;
     font-size: 20px;
     cursor: pointer;
+    text-decoration: none;
+    user-select: none;
+    color: #000;
 }
 .nav__buttonSection:hover{ background-color: rgba(0, 0, 0, 0.7); color: #fff }
 
-.nav__buttonSection *{ pointer-events: none; user-select: none }
 
 /* --------------------- MAIN ----------------------------- */
 
@@ -53,6 +63,7 @@ nav{
     height: 100vh;
     background-color: rgb(206, 205, 205);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -64,9 +75,8 @@ nav{
 /*---------------------- SECTION HOME ---------------------------*/
 
 
-.sectionHome{
+.section-home{
     display: flex;
-    flex-direction: column;
     justify-content:start;
     align-items: center;
     width: 100%;
@@ -124,8 +134,18 @@ nav{
     padding: 20px;
     font-size: 25px;
     cursor: pointer;
+    color: #000;
+    text-decoration: none;
 }.cv-home:hover{ background-color: rgba(255, 255, 255, 0.562); }
 .cv-home i{ margin-right: 10px; }
 
 
 /*---------------------- SECTION ABOUT-ME ---------------------------*/
+
+.section-aboutMe{ padding: 0 10% }
+
+.aboutMe__h2{ margin-bottom: 20px }
+.aboutMe__p{ text-align: center }
+.aboutMe__skills{ margin-top: 20px; display: flex; gap: 40px; box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); background-color: rgb(207, 207, 207); padding: 20px; }
+.skills__i{ font-size: 50px; transition: transform linear .2s, color linear .2s }
+.skills__i:hover{ transform: scale(1.2); color: rgb(68, 67, 67); }

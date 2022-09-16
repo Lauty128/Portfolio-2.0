@@ -4,18 +4,20 @@
 }
 
 @media screen and (max-width:700px){
-    body{ grid-template-columns: 1fr; grid-template-rows: 90vh 10vh; }
+    body{ grid-template-columns: 1fr }
     
     /* -------- MENU ------- */
-    .nav{ 
-        background-color: aliceblue; 
+    .nav__div{ 
         width: 100%; 
-        height: 100%; 
+        height: fit-content; 
         flex-direction: row;
-        margin-top: 0vh;
+        top:auto;
+        bottom:0;
+        left: 0;
+        background-color: #ffff;
     }
     .nav__buttonSection span{ display: none; }
-    .nav__buttonSection{ display: flex; align-items: center; justify-content: center; padding: 10px; }
+    .nav__buttonSection{ display: flex; align-items: center; justify-content: center; padding: 20px 10px; }
 
     /* -------- SECTION HOME ------- */    
     .sectionHome{ padding-top: 50px }
@@ -26,4 +28,8 @@
     /* -------- SECTION HOME ------- */
     .sectionHome{ padding-top: 0; }
     .background-home, .mainData-home{ width: 100%; }
+    .mainData-home{ grid-template-columns: 40% 60%; }
+    .mainData-home__h2{ font-size: 19px; }
+    .mainData-home__h3{ font-size: 10px; }
 }
+

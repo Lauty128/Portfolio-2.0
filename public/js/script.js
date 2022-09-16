@@ -1,29 +1,14 @@
-const menu = document.querySelector("nav");
-const main = document.querySelector("main");
+let URLextension = window.location.hash;
+const menu = document.querySelector(".nav__div");
 
-const responsiveDesign__main = ()=>{
-    console.log(window.innerWidth)
-    if(window.innerWidth <= 700){
-        main.insertAdjacentElement("afterend", menu)   
-        return
-    }
-    if(document.body.firstElementChild.classList.contains("main")) document.body.insertAdjacentElement("afterbegin", menu) 
+const menuSelect = ()=>{
+    if(document.querySelector(".nav__buttonSection--active")) document.querySelector(".nav__buttonSection--active").classList.remove("nav__buttonSection--active")
+    setTimeout(()=>{ 
+        URLextension = window.location.hash;
+        document.getElementById(`${URLextension.slice(1)}--button`).classList.add("nav__buttonSection--active")
+     },50)
 }
 
-// INIT PAGE
-addEventListener("resize", responsiveDesign__main)
+menu.addEventListener("click", menuSelect)
 
-const sections = {
-    "home" : "0vh",
-    "aboutMe":"-100vh",
-    "projects":"-200vh",
-    "contactMe":"-300vh"
-}
-
-document.querySelector(".nav").addEventListener("click", e=>{
-    document.querySelector(".main").style.transform = `translateY(${sections[e.target.getAttribute("data-href")]})`
-})
-
-
-
-responsiveDesign__main()
+menuSelect()
