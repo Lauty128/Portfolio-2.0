@@ -12,3 +12,13 @@ const menuSelect = ()=>{
 menu.addEventListener("click", menuSelect)
 
 menuSelect()
+
+const skills = document.querySelector(".aboutMe__skills");
+
+skills.addEventListener("mouseover", e=>{
+    if(e.target.classList.contains("skills__div"))
+        e.target.firstElementChild.classList.add("skills__nameTec--active")
+
+    e.target.addEventListener("mouseleave", ()=> e.target.firstElementChild.classList.remove("skills__nameTec--active"))
+})
+

@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/934826e832.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="public/css/layouts.css">
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="stylesheet" href="public/css/media.css">
     <link rel="stylesheet" href="public/css/modifier.css">
     <title>Portfolio</title>
 </head>
 <body>
-    
+<!-- ------------------  MENU  ------------------------ -->
     <nav class="nav">
         <div class="nav__div">
             <a class="nav__buttonSection nav__buttonSection--active" id="home--button" href="#home">
@@ -33,8 +34,13 @@
         </div>
     </nav>
     
+<!-- ------------------  MAIN  ------------------------ -->
+
     <main class="main">
-        <section class="main__section section-home" id="home">
+    
+    <!-- ------------------  HOME SECTION  ------------------------ -->
+       
+        <section class="main__section section-home flex-column-start" id="home">
 
                 <div class="background-home">
                     <img src="public/img/office-g57d11e9a5_1920.jpg" alt="Background" class="background-home__img">
@@ -60,29 +66,79 @@
 
         </section>
 
-        <section class="main__section section-aboutMe" id="aboutMe">
+    <!-- ------------------  ABOUT-ME SECTION  ------------------------ -->
+      
+        <section class="main__section section-aboutMe flex-column-center" id="aboutMe">
+            
             <h2 class="aboutMe__h2">ACERCA DE MI</h2>
-            <p class="aboutMe__p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo vero placeat veritatis animi ad illum saepe consequatur, quaerat inventore sint nam corrupti optio numquam? Obcaecati laborum molestias amet aperiam possimus?</p>
-            <div class="aboutMe__skills">
-                <i class="skills__i fa-brands fa-html5" data-name="HTML5"></i>
-                <i class="skills__i fa-brands fa-css3-alt" data-name="CSS3"></i>
-                <i class="skills__i fa-brands fa-square-js" data-name="JavaScript"></i>
-                <i class="skills__i fa-brands fa-git-alt" data-name="Git"></i>
-                <i class="skills__i fa-brands fa-github" data-name="GitHub"></i>
-                <i class="skills__i fa-brands fa-figma" data-name="Figma"></i>
+            <p class="aboutMe__p">🧑 Soy una persona responsable con una gran capacidad y muchas ganas de aprender. Comencé a meterme en la programación hace aproximadamente 1 año y, desde que empece, hasta hoy continuo realizando distintos proyectos para seguir ganando experiencia y desarrollar mis habilidades. 
+                Me encuentro en la búsqueda de mi primer experiencia laboral, con el fin de crecer profesionalmente y adquirir nuevos conocimientos.</p>
+            
+                <h3 class="aboutMe__h3">💻Tecnologias</h3>
+            <div class="aboutMe__skills flex-row-center">
+                <div class="skills__div flex-column-center">
+                    <div class="skills__nameTec"><span class="nameTec__span">HTML5</span></div>
+                    <i class="skills__i fa-brands fa-html5" data-name="HTML5"></i>
+                </div>
+                <div class="skills__div flex-column-center">
+                    <div class="skills__nameTec"><span class="nameTec__span">CSS3</span></div>
+                    <i class="skills__i fa-brands fa-css3-alt" data-name="CSS3"></i>
+                </div>
+                <div class="skills__div flex-column-center">
+                    <div class="skills__nameTec"><span class="nameTec__span">JavaScript</span></div>
+                    <i class="skills__i fa-brands fa-square-js" data-name="JavaScript"></i>
+                </div>
+                <div class="skills__div flex-column-center">
+                    <div class="skills__nameTec"><span class="nameTec__span">Git</span></div>
+                    <i class="skills__i fa-brands fa-git-alt" data-name="Git"></i>
+                </div>
+                <div class="skills__div flex-column-center">
+                    <div class="skills__nameTec"><span class="nameTec__span">GitHub</span></div>
+                    <i class="skills__i fa-brands fa-github" data-name="GitHub"></i>
+                </div>
+                <div class="skills__div flex-column-center">
+                    <div class="skills__nameTec"><span class="nameTec__span">Figma</span></div>
+                    <i class="skills__i fa-brands fa-figma" data-name="Figma"></i>
+                </div>
             </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vitae tenetur a debitis aperiam libero voluptas, cumque quia fugiat at molestiae earum dolorum.</p>
+            
+            <p class="aboutMe__p">Puedes comunicarte conmigo a través de mis redes sociales. No dudes en contactarme!!<br>
+                También puedes enviarme tus datos para que yo pueda comunicarme contigo <a href="#contactMe">AQUÍ</a></p>
+            
+            <h3 class="aboutMe__h3">📱Contactos</h3>
+            <div class="aboutMe__socialNetworks flex-row-center">
+                <a class="socialNetworks__a" href="https://www.linkedin.com/in/lautaro-silverii-8a5750209/">
+                    <i class="socialNetworks__i fa-brands fa-linkedin"></i>
+                    <span class="socialNetworks__span">Linkedin</span>
+                </a>
+                <a class="socialNetworks__a" href="https://github.com/Lauty128">
+                    <i class="socialNetworks__i fa-brands fa-github"></i>
+                    <span class="socialNetworks__span">GitHub</span>
+                </a>
+                <a class="socialNetworks__a" href="#">
+                    <i class="socialNetworks__i fa-solid fa-envelope"></i>
+                    <span class="socialNetworks__span">Gmail</span>
+                </a>
+            </div>
+                
         </section>
 
-        <section class="main__section main__section--projects" id="projects">
+    <!-- ------------------  PROJECTS SECTION  ------------------------ -->
+      
+    <section class="main__section section-projects flex-row-center" id="projects">
             <h2 class="main__section__h2">PROJECTS</h2>
         </section>
 
-        <section class="main__section main__section--contactMe" id="contactMe">
+    <!-- ------------------  CONTACT-ME SECTION  ------------------------ -->
+       
+    <section class="main__section section-contactMe flex-row-center" id="contactMe">
             <h2 class="main__section__h2">CONTACT ME</h2>
         </section>
     </main>
-    
+
+<!-- ------------------  JAVASCRIPT  ------------------------ -->
+
     <script src="public/js/script.js"></script>
+
 </body>
 </html>

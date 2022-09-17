@@ -1,6 +1,9 @@
 @media screen and (max-width:950px){
     /* -------- SECTION HOME ------- */
     .background-home, .mainData-home{ width: 80%; }
+
+        /* -------- SECTION ABOUT-ME ------- */
+        .section-aboutMe{ justify-content: flex-start; }
 }
 
 @media screen and (max-width:700px){
@@ -20,16 +23,29 @@
     .nav__buttonSection{ display: flex; align-items: center; justify-content: center; padding: 20px 10px; }
 
     /* -------- SECTION HOME ------- */    
-    .sectionHome{ padding-top: 50px }
+    .section-home{ padding-top: 40px }
     .mainData-home__h3{ font-size: 12px; }
+    .skills__nameTec{ font-size:12px; }
+
+    /* -------- SECTION ABOUT-ME ------- */
+    .section-aboutMe{ justify-content: flex-start; }
 }
 
 @media screen and (max-width:500px){
     /* -------- SECTION HOME ------- */
-    .sectionHome{ padding-top: 0; }
+    .section-home{ padding-top: 0; }
     .background-home, .mainData-home{ width: 100%; }
     .mainData-home{ grid-template-columns: 40% 60%; }
     .mainData-home__h2{ font-size: 19px; }
     .mainData-home__h3{ font-size: 10px; }
+
+    /* -------- SECTION ABOUT-ME ------- */
+    .section-aboutMe{ padding: 0 5px }
+    .aboutMe__skills{ gap: 30px; }
+    .skills__i{ font-size: 30px; }
 }
 
+@media screen and (max-width:360px){
+    /* -------- SECTION ABOUT-ME ------- */
+    .aboutMe__skills{gap: 20px; width: 100% }
+}
